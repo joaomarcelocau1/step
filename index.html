@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Com carinho! Para Stephany.</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/all.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="imagens2/loveisaverb.MP3">
+
+</head>
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bem-vinda</h1>
+            <p>Você está pronta?</p>
+            <button class="mudaTela btn-azul">Começar</button>
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar<br>aqui vai um pequeno teste para saber se você é digna:</small>
+            <br>
+            <strong>Você conhece essa pessoa?</strong></p>
+            <img src="imagens2/foto1.jpeg" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block" onclick="alert('Então você não deveria estar acessando este site.')">Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Você conhece essa pessoa?</strong><br><br></p>
+            
+            <img src="imagens2/fotoeu1.jpeg" class="custom" width="150" alt="">
+           
+            <br>
+            <button class="mudaTela btn-block btn-azul">Sim</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Sai daqui!');" >Não</button>
+
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espera um pouco</h2>
+
+            <img src="imagens2/placapare.webp" class="custom mb-4" width="150" alt="">
+
+            <p>É a <strong> minha futura namorada</strong> que está acessando essa página agora?
+                <br><small class="text-muted" style="font-weight: 700;">Sim, Você mesma cujo o nome começa com S</small>
+            </p>
+
+            <button class="mudaTela btn-azul">Sim, sou eu</button>
+            <button class="mudaTela btn-vermelho btn-block" onclick="alert('Você deveria ter vergonha de estar aqui!\n\nEu sei que mesmo te levando para outra página, você vai voltar aqui. Afinal, sua curiosidade não deixa você ficar longe por muito tempo! Mas, como sou uma pessoa legal, vou te deixar seguir para a próxima página.' );" >Não, eu sou uma amiga ou conhecido da Stephany que está acessando esse site, mesmo o João tendo dito pra ela não passar para ninguém. <br></button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p><strong> Se tudo funcionar como o programado você deveria está ouvindo uma música de fundo.</strong> </p>
+            <hr>
+            <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="4000">
+                <p>Escolhi essa música especialmente porque sei o quanto você gosta dela!</p>
+            </div>
+            <div tempo="3000">
+                <p>Fiz esse presente pra você</p>
+            </div>
+            <div tempo="3000">
+                <p>e queria que soubesse de algumas coisas.</p>
+            </div>
+             <div tempo="2000" final="true">
+                <p>Espero que goste!</p>
+            </div>  
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="4000">
+                <p>Eu acho que nem nós dois entendemos direito</p>
+            </div>
+            <div tempo="2500">
+                <p>como viemos parar aqui.</p>
+            </div>
+            <div tempo="4000">
+                <p>A gente só conversava no Instagram, como dois amigos...</p>
+            </div>
+            <div tempo="2500">
+                <p>E, de repente, tudo mudou.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>E que mudança maravilhosa!</p>
+            </div>
+               
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="1000">
+         
+            <p><strong>Eu quero mostrar uma coisa para você.</strong> </p>
+            <p class="letra-vermelha">"Posso?"</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+       
+
+        
+        <div id="tela9" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Essa é a minha foto favorita sua</h2>
+                    <img src="imagens2/foto2.jpeg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>"Como você é linda, minha querida! Ah, como é linda!..." Ct 1:15-16</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Eu amo essa foto sua!</span><br>Acho que nem preciso te explicar o porquê, seu sorriso, seus olhos, seu cabelo... Mas há um motivo mais específico. Essa foi a foto que me fez perceber que eu estava no caminho certo. 
+                <p>Ela faz parte de uma das nossas primeiras conversas sobre o que estava acontecendo entre a gente. Foi quando você deu a entender que estava ficando apaixonada por mim (e eu nem preciso falar a cara que eu fiquei quando você me falou hahahahah).
+                
+                <hr>
+               
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Nossas fotos</h2>
+                    <img src="imagens2/eueela.jpeg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>"O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor. O amor tudo sofre, tudo crê, tudo espera, tudo suporta." 1 Coríntios 13:4-7 </strong></p>    
+                </div>
+                <hr>
+                <p>Essas são duas das poucas fotos que nós temos juntos. Peguei elas porque são minhas fotos preferidas. Não foram as primeiras, mas eu gosto muito delas.</p>
+                <p>Elas foram tiradas em dias especiais depois de momentos especiais que vivemos. 
+                <p>E, por falar em momentos, já criei inúmeras lembranças com você. Sejam elas boas, de momentos em que estávamos felizes, ou até mesmo depois de nos desentendermos também, pois, infelizmente, não dá para fugir dessas coisas, né?"</p>
+                <hr>
+                <p>Escolhi essa passagem da Bíblia porque acredito que ela tem muito a ver com a gente. Tanta coisa que a gente tinha para resolver, pensar (você mais do que eu, hahahaha), para enfim podermos viver tudo o que estamos vivendo.
+
+            </div>
+    
+            <button class="mudaTela btn-rosa">Continuar</button>
+             
+        </div>
+
+
+        <div id="tela11" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="5000">
+                <p>Eu acho que este site foi uma boa maneira de quebrar o gelo</p>
+            </div>
+             <div tempo="3000">
+                <p>mas você merece muito mais que isso.</p>
+            </div>
+             <div tempo="6000">
+                <p>Agora eu tenho algumas coisas pra te dizer pessoalmente.</p>
+            </div>
+            <div tempo="10000" final="true">
+                <p>Fim.</p>
+            </div>
+
+            </div>
+
+
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
+    
+
